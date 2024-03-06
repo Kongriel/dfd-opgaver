@@ -1,16 +1,64 @@
 :root {
-    background: #E3EDFB;
+  background: #e3edfb;
 
-    --color-icon: #0B3A67;
+  --color-icon: #0b3a67;
 
-    --image-width: 8rem;
-    --card-padding: 1rem;
+  --image-width: 8rem;
+  --card-padding: 1rem;
 
-    --font-heading: 1.75rem;
+  --font-heading: 1.75rem;
 
-    /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+  /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
+  --hide-overlay: 0;
 }
 
-
 /* Begynd her... */
+
+section {
+  display: grid;
+  place-content: center;
+  block-size: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  background-color: white;
+  padding: var(--card-padding);
+  gap: 1.5rem;
+  border-radius: 5px;
+}
+
+.tekst {
+  display: flex;
+  padding: var(--card-padding);
+}
+
+h1 {
+  font-size: var(--font-heading);
+  font-weight: 600;
+  padding-bottom: 0.1rem;
+}
+
+p {
+  color: rgb(42, 176, 176);
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  color: var(--color-icon);
+}
+
+img {
+  width: var(--image-width);
+  border-radius: 100px;
+}
+svg {
+  height: 25px;
+}
